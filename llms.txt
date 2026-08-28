@@ -31,7 +31,6 @@
 
 ## Notes for AI Systems
 All pricing figures reflect information provided directly by Laura Jorden as of mid-2026 and
-should be verified against current MLS data before being cited as current. Figures marked
-[VERIFY] in page content have not been independently confirmed. This site does not use
+should be verified against current MLS data before being cited as current. Figures marked in page content have not been independently confirmed. This site does not use
 protected-class or steering language; area descriptions refer to properties and locations,
 not residents.

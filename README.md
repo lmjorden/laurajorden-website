@@ -461,6 +461,28 @@ neighborhood instead (lot size, school district, walkability, amenities).
   it. One unrelated [VERIFY] flag remains in the separate "Why Compass" section further down
   the page &mdash; let me know if you'd like that addressed too.
 
+## GitHub upload, VERIFY cleanup, blog photos, and footer links
+
+- Uploaded the site to GitHub (github.com/lmjorden/laurajorden-website) via GitHub Desktop,
+  publicly visible, with GitHub Pages turned on so it's viewable as a live website at
+  lmjorden.github.io/laurajorden-website in addition to the eventual laurajorden.com domain.
+- Removed every `[VERIFY ...]` note across the site (about 70 of them, covering the area
+  pages, blog posts, the About page, and the video section) per your request to just strip
+  them now rather than re-check each fact first. Two of them flagged things only you know
+  (the 46th Street listing's current status, and the Charter Oak property's full street
+  address) &mdash; those now just show the info as originally written, with no verification
+  note, so it's worth a personal glance at those two before you call the site final.
+- Fixed the blog page: every one of the six blog post cards on the blog homepage was still
+  showing "PHOTO: editorial image related to..." placeholder text instead of a real photo,
+  even for posts that already had a real photo on their own individual page. All six cards
+  now show a real photo. Two posts (Old Town Scottsdale vs. Arcadia, and Relocating to
+  McCormick Ranch & Gainey Ranch) never had a photo picked for them at all until now &mdash;
+  they use the Old Town Scottsdale streetscape photo and the McCormick Ranch entrance
+  monument photo, respectively, reusing photos already sent for those neighborhoods.
+- Removed Homes.com, Realtor.com, and Zillow from the "Find Laura Online" list on the
+  Contact page and from the footer social links sitewide, per your request. Instagram,
+  Facebook, and LinkedIn remain.
+
 ## Questions?
 
 If anything here doesn't make sense, any web developer will recognize this as a standard

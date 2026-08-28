@@ -502,6 +502,19 @@ neighborhood instead (lot size, school district, walkability, amenities).
   and I can't verify licensing on it from a chat message alone. Clicking the photo opens the
   Design 9 article in a new tab.
 
+## Biltmore and Shea/Cactus Corridor content cleanup, Scottsdale Country Club rebrand
+
+- Biltmore: removed the line noting buyers should check reserve funding, resort fees, or
+  golf-membership requirements &mdash; that FAQ answer now just points buyers to confirm each
+  building's HOA rules.
+- Shea/Cactus Corridor: removed every reference to irrigation and wells (including in the
+  hero image alt text), and removed all "one- to five-acre parcel" language, replaced with
+  general "large lot" wording throughout the page and its FAQ.
+- Scottsdale Country Club: updated across the Shea/Cactus Corridor page to reflect the club's
+  recent rebrand back to the Scottsdale Country Club name (it had been operating as Starfire
+  Golf Club) and its current 18-hole championship course plus Six Shooter, a 10-hole short
+  course, replacing the old three-nine-hole (King/Squire/Hawk) description.
+
 ## Questions?
 
 If anything here doesn't make sense, any web developer will recognize this as a standard

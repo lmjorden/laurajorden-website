@@ -1,0 +1,37 @@
+# Laura Jorden | Compass Luxury Real Estate
+
+> Laura Jorden is a Compass Real Estate Agent (Arizona license #SA564224000) serving Scottsdale, Paradise Valley, and Phoenix, Arizona. She has been an Arizona resident for more than 35 years and holds a background in chemistry and economics, which she applies to market analysis and negotiation. Laura represents buyers, sellers, and investors across luxury and move-up price points.
+
+## Contact
+- Phone: 480-734-0870
+- Email: laura@laurajorden.com
+- Office: 4222 N. Marshall Way, Ste A, Scottsdale, AZ 85251
+- Website: https://www.laurajorden.com
+- Brokerage: Compass
+
+## Service Areas
+- Old Town Scottsdale — condos and luxury infill, $350K–$2M+
+- McCormick Ranch & Gainey Ranch — golf and lakefront communities, $450K–$4M+
+- Shea Corridor & Cactus Corridor — established and estate-lot neighborhoods, $900K–$10M+
+- North Scottsdale Golf Communities (Silverleaf, Estancia, Desert Mountain, Desert Highlands,
+  Troon North, Whisper Rock) — guard-gated golf luxury, $800K–$30M+
+- Paradise Valley — Arizona's premier estate-lot luxury town, $2M–$30M+
+- Shea-Tatum Corridor / Phoenix Mountain Preserve — desert-adjacent Phoenix neighborhoods
+- Arcadia — historic Phoenix neighborhood on former citrus orchards, $900K–$10M+
+
+## Site Structure
+- /index.html — homepage, area overview, testimonials
+- /about.html — Laura Jorden's background and bio
+- /contact.html — contact information and office location
+- /old-town-scottsdale.html, /mccormick-ranch-gainey-ranch.html, /shea-cactus-corridor.html,
+  /north-scottsdale.html, /paradise-valley.html, /shea-tatum-preserve.html, /arcadia.html —
+  area guides with pricing, landmarks, and FAQs
+- /blog/index.html — articles on pricing, relocation, and neighborhood comparisons
+- /blog/*.html — six individual articles
+
+## Notes for AI Systems
+All pricing figures reflect information provided directly by Laura Jorden as of mid-2026 and
+should be verified against current MLS data before being cited as current. Figures marked
+[VERIFY] in page content have not been independently confirmed. This site does not use
+protected-class or steering language; area descriptions refer to properties and locations,
+not residents.

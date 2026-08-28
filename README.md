@@ -483,6 +483,25 @@ neighborhood instead (lot size, school district, walkability, amenities).
   Contact page and from the footer social links sitewide, per your request. Instagram,
   Facebook, and LinkedIn remain.
 
+## Video captions rewritten with the real story behind each project
+
+- 9518 N 46th Street: rewrote the caption to say what actually happened here &mdash; this was
+  an investor project carried out with meticulous care at every stage (architectural plans,
+  design, landscaping, staging), and it set a new record sale for the community, going under
+  contract and closing in 44 days with multiple offers.
+- 8310 E Charter Oak Drive, Scottsdale, AZ: added the full address (previously just said
+  "Charter Oak" &mdash; I found the exact street address and confirmed it from your own MLS
+  listing photo folder), plus a new caption explaining this was also an investor project, a
+  Best Bathroom winner in Modern Luxury Interiors' Design 9 Awards, and sold at full price
+  with multiple offers. Linked to the actual award article (modernluxury.com) so visitors can
+  read the feature.
+- Added a clickable "As Seen In" header photo under that caption, using your own primary-bath
+  listing photo (the double vanity with the cherry-blossom branch) rather than the magazine's
+  published copy of it &mdash; same photo, but sourced from your own MLS folder instead of
+  scraped from their site, since their published version is credited to a named photographer
+  and I can't verify licensing on it from a chat message alone. Clicking the photo opens the
+  Design 9 article in a new tab.
+
 ## Questions?
 
 If anything here doesn't make sense, any web developer will recognize this as a standard

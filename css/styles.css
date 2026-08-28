@@ -280,6 +280,10 @@ p { margin: 0 0 1rem; }
 .video-card-caption { margin-top: 0.9rem; text-align: center; }
 .video-card-caption .address { display: block; font-family: var(--font-sans); font-weight: 600; letter-spacing: 0.02em; }
 .video-card-caption .tour-label { display: block; font-size: 0.85rem; color: var(--gray-mid); margin-top: 0.15rem; }
+.award-feature-link { display: block; margin-top: 1rem; text-decoration: none; }
+.award-feature-image { display: block; width: 100%; max-width: 360px; margin: 0 auto; border-radius: 4px; aspect-ratio: 4/3; object-fit: cover; transition: transform 0.4s ease, opacity 0.4s ease; }
+.award-feature-link:hover .award-feature-image { transform: scale(1.02); opacity: 0.92; }
+.award-feature-caption { display: block; margin-top: 0.5rem; font-size: 0.85rem; letter-spacing: 0.02em; text-transform: uppercase; color: var(--navy-deep); }
 
 /* ---------- Sections / Grid ---------- */
 section { padding: clamp(2.5rem, 5vw, 4.5rem) 0; }

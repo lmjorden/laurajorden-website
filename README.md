@@ -515,6 +515,15 @@ neighborhood instead (lot size, school district, walkability, amenities).
   Golf Club) and its current 18-hole championship course plus Six Shooter, a 10-hole short
   course, replacing the old three-nine-hole (King/Squire/Hawk) description.
 
+## Updated 108th Way and Charter Oak videos with new branding
+
+- Replaced both video files with the new 2026-branded reels you sent. Your original uploads
+  were full 4K exports (over 300MB each) &mdash; way past GitHub's 100MB per-file limit &mdash;
+  so I compressed them to 1080p (still sharp on web) at a web-friendly bitrate, matching the
+  quality level of the other videos already on the site. Filenames are unchanged
+  (`videos/reel-108th-way-scottsdale.mp4` and `videos/reel-charter-oak.mp4`), so no other page
+  changes were needed &mdash; the existing video players just pick up the new files.
+
 ## Questions?
 
 If anything here doesn't make sense, any web developer will recognize this as a standard

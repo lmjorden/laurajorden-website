@@ -524,6 +524,26 @@ neighborhood instead (lot size, school district, walkability, amenities).
   (`videos/reel-108th-way-scottsdale.mp4` and `videos/reel-charter-oak.mp4`), so no other page
   changes were needed &mdash; the existing video players just pick up the new files.
 
+## Fixed the broken email signature
+
+- Moving the domain to GitHub Pages broke your Gmail signature because its images were
+  hot-linked to the old WordPress site (`laurajorden.com/wp-content/uploads/...`), which no
+  longer exists at that address.
+- New icon files added: `images/icon-instagram.png`, `images/icon-facebook.png`,
+  `images/icon-linkedin.png` &mdash; simple navy circle icons matching your site's brand color,
+  so the signature no longer depends on the old host.
+- The signature now points to files already live on your own site: your headshot
+  (`images/laura-jorden-headshot.jpg`) and logo (`images/logo-full.png`).
+- I used your name/title/address/phone/socials exactly as they appear in this site's footer.
+  I couldn't confirm a Pinterest link (it's not listed anywhere on the site), so it was left
+  out — let me know the URL if you want it added back in.
+- I didn't recreate the Compass logo image since I don't have rights to redistribute their
+  logo file; the signature uses styled text ("Compass") instead, same as your site footer.
+- New signature file: `laura-jorden-email-signature.html`, saved directly in your Downloads
+  folder (not inside this website folder). Open it in a browser, select all the signature
+  content, copy it, then paste into Gmail: Settings (gear icon) → See all settings → General
+  → Signature → paste into your signature box → Save Changes at the bottom.
+
 ## Questions?
 
 If anything here doesn't make sense, any web developer will recognize this as a standard

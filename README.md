@@ -543,18 +543,25 @@ neighborhood instead (lot size, school district, walkability, amenities).
   folder (not inside this website folder). Open it in a browser, select all the signature
   content, copy it, then paste into Gmail: Settings (gear icon) → See all settings → General
   → Signature → paste into your signature box → Save Changes at the bottom.
-- Update (still images not loading): some DNS resolvers still have a stale cached answer
-  for `www.laurajorden.com` from before we pointed the domain to GitHub Pages — Bluehost's
-  actual DNS settings are correct and untouched, but that specific cached record hasn't
-  refreshed everywhere yet. The bare domain (`laurajorden.com`, no "www") is resolving
-  correctly everywhere I checked, so I repointed the signature's image links to use
-  `laurajorden.com` instead of `www.laurajorden.com`. If images still don't show after
-  re-pasting the updated signature, try loading the site from a different network (like your
-  phone on cellular data) — if it looks right there, it's just your home/office network's DNS
-  cache catching up, which will clear on its own.
+- Update (found the real cause): it wasn't DNS caching after all &mdash; I checked GitHub
+  Pages' own settings directly and found it had never actually issued a security certificate
+  (HTTPS) for www.laurajorden.com, even though the domain itself was pointed correctly. Since
+  every image link uses `https://`, browsers refused to load them with no valid certificate,
+  on every network, which is why the phone test didn't help either. I removed and re-added
+  the custom domain in GitHub Pages to force it to request a fresh certificate. This usually
+  finishes within a few minutes to a few hours. The signature's image links are back to
+  `www.laurajorden.com` (the domain the certificate is issued for). Try the signature again
+  in an hour or two &mdash; if images are still broken after that, let me know and I'll check
+  the certificate status again.
 - Also add the same signature separately in Apple Mail on your Mac: Mail app → Settings →
   Signatures → select your laura@laurajorden.com account → paste it in there too. Gmail's
   web signature setting doesn't carry over to Mac Mail automatically — they're separate.
+- Fixed the headshot centering: your headshot file is a tall portrait photo
+  (`images/laura-jorden-headshot.jpg`), so squeezing it into the signature's small square box
+  was centering on the middle of the whole photo, cutting into the top of your hair and
+  showing extra shoulder/jacket instead of your face. Added a new pre-cropped square version,
+  `images/laura-jorden-headshot-signature.jpg`, framed on your face and shoulders with proper
+  headroom, and pointed the signature at that file instead.
 
 ## Questions?
 

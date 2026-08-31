@@ -543,6 +543,18 @@ neighborhood instead (lot size, school district, walkability, amenities).
   folder (not inside this website folder). Open it in a browser, select all the signature
   content, copy it, then paste into Gmail: Settings (gear icon) → See all settings → General
   → Signature → paste into your signature box → Save Changes at the bottom.
+- Update (still images not loading): some DNS resolvers still have a stale cached answer
+  for `www.laurajorden.com` from before we pointed the domain to GitHub Pages — Bluehost's
+  actual DNS settings are correct and untouched, but that specific cached record hasn't
+  refreshed everywhere yet. The bare domain (`laurajorden.com`, no "www") is resolving
+  correctly everywhere I checked, so I repointed the signature's image links to use
+  `laurajorden.com` instead of `www.laurajorden.com`. If images still don't show after
+  re-pasting the updated signature, try loading the site from a different network (like your
+  phone on cellular data) — if it looks right there, it's just your home/office network's DNS
+  cache catching up, which will clear on its own.
+- Also add the same signature separately in Apple Mail on your Mac: Mail app → Settings →
+  Signatures → select your laura@laurajorden.com account → paste it in there too. Gmail's
+  web signature setting doesn't carry over to Mac Mail automatically — they're separate.
 
 ## Questions?
 

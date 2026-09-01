@@ -20,7 +20,7 @@ whoever manages laurajorden.com) with the folder structure intact.
   `north-scottsdale.html` covers Silverleaf, Estancia, Desert Mountain, Desert Highlands,
   Troon North, and Whisper Rock as sections on one page.
 - `blog/index.html` — the blog landing page
-- `blog/*.html` — the six individual blog posts (one file each)
+- `blog/*.html` — the fourteen individual blog posts (one file each)
 
 **Design files (edit once, it changes everywhere):**
 - `css/styles.css` — every color, font, and spacing rule on the site lives here. Change
@@ -562,6 +562,36 @@ neighborhood instead (lot size, school district, walkability, amenities).
   showing extra shoulder/jacket instead of your face. Added a new pre-cropped square version,
   `images/laura-jorden-headshot-signature.jpg`, framed on your face and shoulders with proper
   headroom, and pointed the signature at that file instead.
+
+## Added 8 new SEO blog posts (September 2026)
+
+- Updated the social icon files (`images/icon-instagram.png`, `images/icon-facebook.png`,
+  `images/icon-linkedin.png`) to use each platform's real brand colors instead of the
+  original navy placeholders.
+- Fixed a layout/sizing bug in the email signature: the source images (headshot, logo,
+  social icons) were larger than their display size, and some email clients (Apple Mail in
+  particular) ignore HTML width/height instructions and just show the image at its real
+  size. Resized `images/laura-jorden-headshot-signature.jpg` and the three icon files to
+  their exact display dimensions, and added a dedicated `images/logo-signature.png` sized
+  just for the signature so the site's main logo elsewhere is untouched.
+- Added 8 new blog posts to `blog/`, each with full SEO metadata (title, description, Open
+  Graph/Twitter tags) and structured data (RealEstateAgent, FAQPage, BreadcrumbList,
+  BlogPosting schema), matching the format of the original six posts:
+  - `relocating-to-scottsdale-buyers-guide.html`
+  - `what-2-million-buys-scottsdale.html`
+  - `scottsdale-luxury-market-forecast-2027.html`
+  - `best-golf-course-communities-scottsdale.html`
+  - `selling-luxury-home-scottsdale-timeline.html`
+  - `new-construction-vs-resale-scottsdale.html`
+  - `best-neighborhoods-empty-nesters-retirees-scottsdale.html`
+  - `scottsdale-vs-phoenix-luxury-buyers.html`
+- Added a card for each new post to `blog/index.html`, dated August 1 through September 19,
+  2026, using existing site photography (no new images were added for these posts).
+- Market statistics in the price-guide and forecast posts (median prices, the $2M+ segment's
+  year-over-year growth, Silverleaf/Paradise Valley pricing, etc.) are based on public market
+  reports gathered via web search at the time of writing. Real estate data shifts quickly —
+  worth spot-checking these figures every few months and updating the posts if numbers have
+  moved meaningfully.
 
 ## Questions?
 

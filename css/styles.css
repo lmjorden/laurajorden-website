@@ -328,20 +328,29 @@ th { font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 1.5px; t
 /* ---------- Scrolling testimonial marquee ---------- */
 .testimonial-scroll-outer {
   overflow: hidden; position: relative; margin-top: 2rem;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+}
+.testimonial-scroll-outer::before, .testimonial-scroll-outer::after {
+  content: ""; position: absolute; top: 0; bottom: 0; width: 60px; z-index: 2; pointer-events: none;
+}
+.testimonial-scroll-outer::before {
+  left: 0; background: linear-gradient(90deg, var(--white, #fff), transparent);
+}
+.testimonial-scroll-outer::after {
+  right: 0; background: linear-gradient(270deg, var(--white, #fff), transparent);
 }
 .testimonial-scroll-track {
   display: flex; gap: 2.5rem; width: max-content;
   animation: testimonial-scroll 70s linear infinite;
+  -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0);
+  will-change: transform; backface-visibility: hidden; -webkit-backface-visibility: hidden;
 }
 .testimonial-scroll-outer:hover .testimonial-scroll-track { animation-play-state: paused; }
 .testimonial-scroll-track .testimonial {
   flex: 0 0 380px; background: var(--white); padding: 0.25rem 0 0.25rem 1.5rem;
 }
 @keyframes testimonial-scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from { transform: translate3d(0,0,0); }
+  to { transform: translate3d(-50%,0,0); }
 }
 @media (max-width: 700px) {
   .testimonial-scroll-track .testimonial { flex: 0 0 280px; }

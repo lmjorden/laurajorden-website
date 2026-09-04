@@ -140,6 +140,68 @@
       });
     });
 
+    /* ---------- Testimonial marquee (JS-driven for reliable mobile looping) ----------
+       The track's HTML contains the testimonials duplicated back-to-back, so
+       shifting exactly one copy's width to the left and snapping back to 0
+       produces a seamless infinite loop. Driving this with requestAnimationFrame
+       (instead of a CSS @keyframes animation) avoids a mobile Safari issue where
+       long-running looped CSS animations on a masked/transformed flex container
+       can stop compositing after the first pass, leaving the section blank. */
+    var track = document.querySelector(".testimonial-scroll-track");
+    if (track) {
+      var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (reduceMotion) {
+        track.style.transform = "translate3d(0,0,0)";
+      } else {
+        var outer = track.closest(".testimonial-scroll-outer");
+        var halfWidth = 0;
+        var position = 0;
+        var paused = false;
+        var lastTime = null;
+        var pxPerSecond = 0;
+
+        function measure() {
+          halfWidth = track.scrollWidth / 2;
+          // Original design speed: one full copy scrolls past in ~70s.
+          pxPerSecond = halfWidth / 70;
+          if (position < -halfWidth || position > 0) position = 0;
+        }
+        measure();
+
+        var resizeTimer;
+        window.addEventListener("resize", function () {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(measure, 200);
+        });
+
+        if (outer) {
+          outer.addEventListener("mouseenter", function () { paused = true; });
+          outer.addEventListener("mouseleave", function () { paused = false; });
+          outer.addEventListener("touchstart", function () { paused = true; }, { passive: true });
+          outer.addEventListener("touchend", function () { paused = false; });
+        }
+
+        function step(timestamp) {
+          if (lastTime === null) lastTime = timestamp;
+          var delta = (timestamp - lastTime) / 1000;
+          lastTime = timestamp;
+          if (!paused && halfWidth > 0) {
+            position -= pxPerSecond * delta;
+            if (position <= -halfWidth) position += halfWidth;
+            track.style.transform = "translate3d(" + position + "px,0,0)";
+          }
+          requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+
+        document.addEventListener("visibilitychange", function () {
+          // Reset the clock reference so a long background tab doesn't
+          // cause one giant jump in position when the tab becomes active again.
+          lastTime = null;
+        });
+      }
+    }
+
     /* ---------- Floating "Let's Connect" contact widget ---------- */
     var fabBtn = document.getElementById("floatingContactBtn");
     var fabPanel = document.getElementById("floatingContactPanel");

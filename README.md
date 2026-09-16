@@ -20,7 +20,7 @@ whoever manages laurajorden.com) with the folder structure intact.
   `north-scottsdale.html` covers Silverleaf, Estancia, Desert Mountain, Desert Highlands,
   Troon North, and Whisper Rock as sections on one page.
 - `blog/index.html` — the blog landing page
-- `blog/*.html` — the fourteen individual blog posts (one file each)
+- `blog/*.html` — the eighteen individual blog posts (one file each)
 
 **Design files (edit once, it changes everywhere):**
 - `css/styles.css` — every color, font, and spacing rule on the site lives here. Change
@@ -592,6 +592,39 @@ neighborhood instead (lot size, school district, walkability, amenities).
   reports gathered via web search at the time of writing. Real estate data shifts quickly —
   worth spot-checking these figures every few months and updating the posts if numbers have
   moved meaningfully.
+
+## Added 4 more SEO blog posts + photo/ordering fixes (September–October 2026)
+
+- Added 4 more blog posts to `blog/`, same structure and schema as the rest (RealEstateAgent,
+  FAQPage, BreadcrumbList, BlogPosting), targeting buyer segments not yet covered:
+  - `relocating-california-to-scottsdale-luxury-buyers-guide.html` (Sept 26, 2026)
+  - `desert-mountain-silverleaf-troon-north-compared.html` (Oct 3, 2026)
+  - `biltmore-living-scottsdale-caliber-luxury-phoenix.html` (Oct 10, 2026)
+  - `buying-second-home-scottsdale-snowbird-guide.html` (Oct 17, 2026)
+  - Market/tax figures (CA vs. AZ income tax rates, AZ property tax classes, Silverleaf
+    membership pricing, snowbird visitor counts, closing volume) are sourced from public
+    reporting gathered via web search at time of writing — same caveat as the other posts:
+    worth spot-checking periodically since these numbers move.
+- `blog/index.html` now lists every post newest-first (it had been oldest-first since launch).
+  The homepage "Recent Articles" section was also quietly showing your 3 oldest posts since
+  June instead of the newest ones — fixed so it always reflects your 3 newest posts.
+- Added several real photos supplied directly (MLS/listing photos you have rights to, plus a
+  few you took): `images/paradise-valley-mountain-view-drone.jpg`,
+  `images/scottsdale-mountain-ridge-twilight-drone.jpg`,
+  `images/new-construction-twilight-pool.jpg`,
+  `images/scottsdale-luxury-backyard-mountain-view.jpg`,
+  `images/gainey-ranch-entrance-monument.jpg`, and 5 lifestyle photos you sent
+  (`images/scottsdale-desert-trail-hikers.jpg`, `images/phoenix-skyline-sunset.jpg`,
+  `images/scottsdale-backyard-putting-green-desert.jpg`,
+  `images/scottsdale-luxury-home-patio-detail.jpg`, `images/scottsdale-pickleball-court.jpg`).
+  Declined a couple of other candidate photos along the way (Envato preview downloads with
+  visible watermarks, and a photo confirmed to belong to a community's own website) to avoid
+  any copyright issue on the live site.
+- Fixed the "What Do Laura Jorden's Clients Say?" testimonial marquee on the homepage, which
+  was going blank on mobile after one scroll pass instead of looping — a known mobile Safari
+  issue with long, looping CSS animations on a transformed container. Replaced the CSS
+  animation with a small JavaScript-driven version in `js/main.js` that manually loops the
+  scroll position every frame, which isn't subject to that browser bug.
 
 ## Questions?
 

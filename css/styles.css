@@ -619,3 +619,16 @@ html.js .reveal.is-visible { opacity: 1; transform: translateY(0); }
   .floating-contact-panel { right: 1rem; bottom: 4.75rem; }
   .floating-contact-btn { padding: 0.85rem 1.3rem; font-size: 0.7rem; }
 }
+
+/* Author box on blog posts */
+.author-box-section { padding-top: 0; }
+.author-box { display: flex; gap: 1.5rem; align-items: center; border-top: 1px solid var(--gray-line); border-bottom: 1px solid var(--gray-line); padding: 1.75rem 0; max-width: 760px; }
+.author-box-photo { width: 96px; height: 96px; object-fit: cover; border-radius: 50%; flex-shrink: 0; }
+.author-box p { margin: 0 0 0.5rem; font-size: 0.98rem; }
+.author-box-title { font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.85rem !important; color: var(--gold-deep); }
+.author-box-link { font-size: 0.9rem; }
+@media (max-width: 600px) { .author-box { flex-direction: column; align-items: flex-start; } }
+/* Recognition line */
+.recognition-badge { display: inline-flex; align-items: center; gap: 0.6rem; margin: 0 0 1.5rem; padding: 0.55rem 1rem; border: 1px solid rgba(255,255,255,0.55); font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--white); }
+.recognition-badge a { color: var(--white); border-bottom: 1px solid rgba(255,255,255,0.5); }
+.recognition-badge .rb-mark { color: #d99a66; font-size: 1rem; }

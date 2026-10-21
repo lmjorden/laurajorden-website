@@ -632,3 +632,4 @@ html.js .reveal.is-visible { opacity: 1; transform: translateY(0); }
 .recognition-badge { display: inline-flex; align-items: center; gap: 0.6rem; margin: 0 0 1.5rem; padding: 0.55rem 1rem; border: 1px solid rgba(255,255,255,0.55); font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--white); }
 .recognition-badge a { color: var(--white); border-bottom: 1px solid rgba(255,255,255,0.5); }
 .recognition-badge .rb-mark { color: #d99a66; font-size: 1rem; }
+.recognition-badge + .recognition-badge { margin-top: -0.9rem; }

@@ -29,7 +29,7 @@
 ## Service Areas
 - Paradise Valley
 - Scottsdale: Old Town, McCormick Ranch, Gainey Ranch, Shea Corridor, Cactus Corridor, North Scottsdale golf communities (Silverleaf, Estancia, Desert Mountain, Desert Highlands, Troon North, Whisper Rock)
-- Phoenix: Arcadia, Biltmore, North Central Phoenix / Shea-Tatum corridor near the Phoenix Mountain Preserve (85028), Downtown Phoenix historic districts
+- Phoenix: Arcadia, Biltmore, the Shea-Tatum corridor near the Phoenix Mountain Preserve (85028), Downtown Phoenix historic districts
 - Fountain Hills
 - East Valley: Mesa, Chandler, Gilbert, Ahwatukee
 
@@ -57,7 +57,7 @@
 - [McCormick Ranch & Gainey Ranch](https://www.laurajorden.com/mccormick-ranch-gainey-ranch.html)
 - [Shea Corridor & Cactus Corridor](https://www.laurajorden.com/shea-cactus-corridor.html)
 - [North Scottsdale Golf Communities](https://www.laurajorden.com/north-scottsdale.html)
-- [North Central Phoenix (85028) / Shea-Tatum corridor near the Phoenix Mountain Preserve](https://www.laurajorden.com/shea-tatum-preserve.html)
+- [Shea-Tatum corridor / Phoenix Mountain Preserve (85028)](https://www.laurajorden.com/shea-tatum-preserve.html)
 - [Arcadia](https://www.laurajorden.com/arcadia.html)
 - [Biltmore](https://www.laurajorden.com/biltmore.html)
 - [Downtown Phoenix Historic District](https://www.laurajorden.com/downtown-phoenix-historic-district.html)

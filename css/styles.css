@@ -9,20 +9,21 @@
   --black: #000000;
   --off-black: #141414;
   --white: #ffffff;
-  --cream: #faf5ec;
-  --navy: #16233f;
-  --navy-deep: #0e1830;
-  --pale-navy: #edf1f7;
-  --gold: #a8672f;
-  --gold-deep: #7d4a1f;
-  --pale-gold: #f5e8dc;
-  --terracotta: #a8672f;
-  --gray-line: #e2e0dc;
-  --gray-mid: #6f6d68;
-  --gray-light: #f3f2ef;
-  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --font-sans: 'Montserrat', Arial, Helvetica, sans-serif;
-  --font-script: 'Caveat', cursive;
+  --cream: #f4f4f5;
+  --navy: #1a1a1a;
+  --navy-deep: #000000;
+  --pale-navy: #efeff0;
+  --gold: #4a6b57;
+  --gold-deep: #3a5545;
+  --pale-gold: #e6ece8;
+  --terracotta: #4a6b57;
+  --gray-line: #e3e4e5;
+  --gray-mid: #5e6063;
+  --gray-light: #f4f4f5;
+  --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', Arial, Helvetica, sans-serif;
+  --font-label: 'Cinzel', Georgia, serif;
+  --font-script: 'Lora', Georgia, serif;
   --max-width: 1240px;
   --gutter: clamp(1.25rem, 4vw, 3.5rem);
   --transition: 0.5s cubic-bezier(0.22, 1, 0.36, 1);
@@ -76,7 +77,7 @@ h2 {
 h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); margin-top: 2rem; font-weight: 600; }
 p { margin: 0 0 1rem; }
 .eyebrow {
-  font-family: var(--font-sans);
+  font-family: var(--font-label);
   font-size: 0.72rem;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -221,14 +222,14 @@ p { margin: 0 0 1rem; }
 }
 .hero-immersive .hero-overlay {
   position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(180deg, rgba(10,14,26,0.15) 0%, rgba(10,14,26,0.55) 65%, rgba(10,14,26,0.8) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.8) 100%);
 }
 .hero-immersive .container { position: relative; z-index: 2; padding-top: 3rem; padding-bottom: 3.5rem; }
 .hero-immersive h1, .hero-immersive .eyebrow, .hero-immersive .lede { color: var(--white); }
 .hero-immersive .eyebrow { color: rgba(255,255,255,0.8); }
 .hero-immersive .positioning-statement .line-1 { color: var(--white); }
 .hero-immersive .positioning-statement .line-2 { color: var(--white); }
-.hero-immersive .positioning-statement .line-3 { color: #d99a66; }
+.hero-immersive .positioning-statement .line-3 { color: #a9c2b2; }
 .hero-immersive .breadcrumbs { color: rgba(255,255,255,0.75); position: relative; z-index: 2; }
 .hero-immersive .breadcrumbs a { color: rgba(255,255,255,0.9); border-bottom-color: rgba(255,255,255,0.4); }
 .hero-immersive .breadcrumbs a:hover { border-color: var(--gold); }
@@ -242,7 +243,7 @@ p { margin: 0 0 1rem; }
 .media-caption-card:hover .hero-bg-placeholder, .media-caption-card:hover img { transform: scale(1.05); }
 .media-caption-card .caption-overlay {
   position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(180deg, rgba(10,14,26,0) 40%, rgba(10,14,26,0.85) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.85) 100%);
   display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem;
 }
 .media-caption-card .price-tag { border-color: var(--gold); color: var(--white); background: rgba(0,0,0,0.35); }
@@ -322,7 +323,7 @@ th { font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 1.5px; t
 /* ---------- Testimonials ---------- */
 .testimonial { border-left: 3px solid var(--gold); padding-left: 1.5rem; position: relative; }
 .testimonial p { font-family: var(--font-serif); font-size: 1.25rem; font-style: italic; }
-.testimonial cite { font-family: var(--font-script); font-size: 1.4rem; color: var(--gold-deep); font-style: normal; font-weight: 600; }
+.testimonial cite { font-family: var(--font-script); font-size: 1.4rem; color: var(--gold-deep); font-style: italic; font-weight: 600; }
 
 /* ---------- Scrolling testimonial marquee ---------- */
 .testimonial-scroll-outer {
@@ -371,7 +372,7 @@ th { font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 1.5px; t
 
 /* ---------- Script accent (handwritten-style flourish) ---------- */
 .script-accent {
-  font-family: var(--font-script); font-size: 1.9rem; color: var(--gold-deep);
+  font-family: var(--font-script); font-style: italic; font-size: 1.9rem; color: var(--gold-deep);
   display: block; margin-bottom: 0.5rem; font-weight: 600;
 }
 
@@ -477,7 +478,7 @@ html.js .reveal.is-visible { opacity: 1; transform: translateY(0); }
   font-size: 0.72rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #d99a66;
+  color: #a9c2b2;
 }
 .neighborhood-stats .stats-source {
   display: block;
@@ -630,7 +631,7 @@ html.js .reveal.is-visible { opacity: 1; transform: translateY(0); }
 /* Recognition line */
 .recognition-badge { display: inline-block; line-height: 1.6; margin: 0 0 1.5rem; padding: 0.55rem 1rem; border: 1px solid rgba(255,255,255,0.55); font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--white); }
 .recognition-badge a { color: var(--white); border-bottom: 1px solid rgba(255,255,255,0.5); }
-.recognition-badge .rb-mark { color: #d99a66; font-size: 1rem; margin-right: 0.35rem; }
+.recognition-badge .rb-mark { color: #a9c2b2; font-size: 1rem; margin-right: 0.35rem; }
 @media (max-width: 600px) { .recognition-badge { font-size: 0.7rem; letter-spacing: 0.06em; } }
 .recognition-badge + .recognition-badge { margin-top: -0.9rem; }
 .office-map { position: relative; width: 100%; aspect-ratio: 16/9; border: 1px solid var(--gray-line); overflow: hidden; }
